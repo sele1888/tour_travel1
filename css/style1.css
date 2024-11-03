@@ -1,0 +1,37 @@
+#container {
+widows: 1260px;
+
+
+}
+
+#header {
+width:  1260px;
+height: 82px;
+position:relative;
+
+background-color: #3B5998;
+border-bottom: 2px solid #000000;
+}
+#leftnav {
+float: left;
+border:hidden;
+border-style:none;
+width: 600px;
+height: 500px ;
+background-color: #EDF0F5;
+border-right: 1px dashed #694717;
+
+}
+
+#body {
+
+width: 1260px;
+height: 618px;
+background-color: #EDF0F5;
+font: color:#FFFFFF;
+
+}
+#footer {
+
+background-color: #6cf;
+}

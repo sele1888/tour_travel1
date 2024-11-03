@@ -1,0 +1,199 @@
+
+<html>
+<head>
+<script language="javascript" type="text/javascript">
+function randomString() {
+	var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
+	var string_length = 8;
+	var randomstring = '';
+	for (var i=0; i<string_length; i++) {
+		var rnum = Math.floor(Math.random() * chars.length);
+		randomstring += chars.substring(rnum,rnum+1);
+	}
+	document.registerationform.randomfield.value = randomstring;
+}
+ 
+
+</script>
+
+
+<link   href="css/style1.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body  background="css/images/body.jpg">
+<a href="index.php"  target="_blank"><--Return to Home </a>
+<div id="body">
+<div  align="center">
+<fieldset style="width:30%"  ><legend ><font color= #333 size="11px">Sign up</font></legend>
+<table width="532" height="372" border="0">
+
+<h3 align="left" ><font face="Courier New, Courier, monospace"><h4 align=left ><font face=Courier New, Courier, monospace>Verification from Dessie tour guide agency  /DTGA/<br>
+
+<br>
+<font face=Courier New, Courier, monospace>You are successfully registered to the world best online operator profile  
+
+
+<br>
+ </h3>
+<form name = "registerationform" method="POST"   action="sign-up.php" onSubmit="return(regvalidate())">
+
+<tr>
+<td width="241" height="22"><font size="+1"   face="Georgia, Times New Roman, Times, serif">Name</td>
+<td width="381"> <input type="text" name="name" size="54%"    id="vname" /></td><br />
+</tr>
+<tr  align="left">
+<td colspan="6" ><tt><font color='red'> <DIV id="une1"  align="right"></div></font></tt></td>
+</tr>
+<tr>
+<td height="40"><font size="+1"   face="Georgia, Times New Roman, Times, serif">Email</td>
+<td> <input type="text" name="email"  size="54%"  id="txtEmail" ></td>
+</tr>
+</tr>
+<tr  align="left">
+<td colspan="6" ><tt><font color='red'> <DIV id="une2"  align="right"></div></font></tt></td>
+</tr>
+<tr>
+<td height="37"><font size="+1"  face="Georgia, Times New Roman, Times, serif">UserName</td>
+<td> <input type="text" name="user" size="54%"  id="userv"></td>
+</tr>
+</tr>
+<tr  align="left">
+<td colspan="6" ><tt><font color='red'> <DIV id="une3"  align="right"></div></font></tt></td>
+</tr>
+<tr>
+<td height="43"><font size="+1"  face="Georgia, Times New Roman, Times, serif">Password</td>
+<td> <input type="password" name="pass" size="54%" id="passv"></td>
+</tr>
+</tr>
+<tr  align="left">
+<td colspan="6" ><tt><font color='red'> <DIV id="une4"  align="right"></div></font></tt></td>
+</tr>
+<tr>
+<td height="45"><font size="+1"  face="Georgia, Times New Roman, Times, serif">Confirm Password </td>
+<td><input type="password" name="cpass"  size="54%" id="cpassv"></td><br>
+</tr>
+</tr>
+<tr  align="left">
+<td colspan="6" ><tt><font color='red'> <DIV id="une5"  align="right"></div></font></tt></td>
+</tr>
+<tr>
+<td  colspan="4"><p>To continue, please type the characters below:</p></td>
+</tr>
+
+<tr>
+ 
+<td   colspan="6"><input disabled="disabled"   style="color: #EE0000; font-size:35px; font-w
+eight: bold; font-family: Helvetica, Arial, sans-serif; background-color: #CCFFFF; border-bottom-style:dotted; border-left-style: dotted; border-right-style: dotted; border-top-style: dotted"  "type="text" name="randomfield"  ><input type="button" value="View another" onClick="randomString();"></td>
+
+</tr>
+<tr>
+<td height="26"><input type="text" name="ch"  size="30%"  id="chv" placeholder="Type hear "></td>
+</tr>
+</tr>
+<tr  align="left">
+<td colspan="6" ><tt><font color='red'> <DIV id="une6"  align="right"></div></font></tt></td>
+</tr>
+<tr>
+
+<td height="47"><input type="submit" name="submit" value="Sign-Up"  size="20%" ></td>
+<td><input type="reset" value="Clear" /></tr>
+</form>
+</table>
+
+<SCRIPT type="Text/JavaScript">
+function regvalidate()
+
+{
+var name = document.getElementById('vname');
+
+if(document.registerationform.name.value=="")
+ {
+  document.getElementById('une1').innerHTML = "First name should not be empty";
+  
+  name.style.backgroundColor = "yellow";
+  registerationform.name.focus();
+  return(false);
+ }
+var email = document.getElementById('txtEmail');
+if(document.registerationform.email.value=="")
+  {
+  document.getElementById('une2').innerHTML = "Email id requered";
+  registerationform.email.focus();
+  email.style.backgroundColor = "yellow";
+  return(false);
+  }
+var email = document.getElementById('txtEmail');
+    var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+    if (!filter.test(email.value)) {
+         document.getElementById('une2').innerHTML = "Please provide a valid email address";
+         email.focus;
+	     registerationform.email.value = "";
+	     email.style.backgroundColor = "yellow";
+    return false;
+}
+var user = document.getElementById('userv');
+ if(document.registerationform.user.value=="")
+  {
+  document.getElementById('une3').innerHTML = "User name field should not be empty";
+  user.focus();
+  email.style.backgroundColor = "yellow";
+  return(false);
+  }
+var user = document.getElementById('userv');
+
+if (user.value.length < 6){
+        document.getElementById('une3').innerHTML = "Username should have miniumum 6 chars";
+        user.focus();
+        user.style.backgroundColor = "yellow";
+		return(false);
+}
+var pass = document.getElementById('passv');
+if(document.registerationform.pass.value=="")
+   {
+        document.getElementById('une4').innerHTML = "Please type a password";
+        registerationform.pass.focus();
+        pass.style.backgroundColor = "yellow";
+        return(false);
+   }
+  var ch = document.getElementById('chv'); 
+if((document.registerationform.ch.value)!= (document.registerationform.randomfield.value))
+   {
+   registerationform.ch.focus();
+  document.getElementById('une6').innerHTML = "Character mismatch,please try again";
+  ch.style.backgroundColor = "yellow";
+    return(false);
+   }
+   var cpass = document.getElementById('cpassv');
+if((document.registerationform.pass.value) != (document.registerationform.cpass.value))
+   {
+  document.getElementById('une5').innerHTML = "Password Must be equal";
+  registerationform.pass.value = "";
+  registerationform.cpass.value = "";
+  registerationform.pass.focus();
+  cpass.style.backgroundColor = "yellow";
+  return(false);
+  }
+  
+if(document.registerationform.ch.value=="")
+   {
+    document.getElementById('une6').innerHTML = "Please ,Click the view another button and  type the character";
+    registerationform.ch.focus();
+    return(false);
+   }
+else
+   {
+   return(true);
+   }
+}
+</SCRIPT>
+
+
+</fieldset>
+</div>
+
+
+
+</body>
+</html>

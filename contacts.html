@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+<head>
+	<title>Tour and travel guiding system.</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<link rel="shortcut icon" href="css/images/logos.png" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<script src="js/jquery-1.7.min.js" type="text/javascript"></script>
+	<script src="js/jquery.jcarousel.js" type="text/javascript"></script>
+	<script src="js/DD_belatedPNG-min.js" type="text/javascript"></script>
+	<script src="js/functions.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="time_top" align="center">	
+		 
+<tr align="right"><td><font color="green" size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Date 
+  <?php
+ $Today=date('y:m:d');
+$new=date('l, F d, Y',strtotime($Today));
+echo $new; ?>
+</font>
+							<script src="css/time.js" language="javascript" type="text/javascript"></script>
+							<body  onLoad="yourClock()", onUnload="stopClock(); return true"> 
+					       <form name="the_clock">
+							<a class="mainlevel">System Time:&nbsp;&nbsp;<input type="text" name="the_time" size="10" style="padding-bottom:5px;" align = "top"></a> 
+	                 </form> </td></tr>
+</div> 
+
+	<div class="shell">		
+		<div id="top-navigation">
+		</div>
+		<div class="welcome-message">	
+		</div>
+		<div class="cl"></div>
+		<div id="wrapper-top"></div>
+		<!-- Wrapper Middle -->
+		<div id="wrapper-middle">
+			<!-- Header -->
+			<div id="header">
+			<img src="image/01.jpg" width="900" height="230" /> 
+							
+				<!-- Search -->
+				
+				<!-- END Search -->				
+			</div>
+			<!-- END Header -->
+			<!-- Navigation -->
+			<div id="navigation">
+								<ul>
+					<li class="first"><a title="Home" href="index.php">Home<span class="home">&nbsp;</span></a></li>
+					<li><a title="operator to guide tourist" href="support.html">Operator</a></li>
+					<li><a title="click here register tourist" href="register.php">Tourist</a></li>
+					<li><a title="About Us" href="aboutus.html">About Us</a></li>
+					<li><a title="Contacts" href="contacts.html">Contacts</a></li>
+					<li><a title="Service" href="service.html">Serivce</a></li>
+					<li><a title="Gallery"   href="gallery.php">Gallery</a></li>
+					<li><a title="login" href="index1.php">Login</a></li>
+				
+		<!--<li class="dropdown" id="login"> <a href="#"class="login"
+          data-toggle="dropdown"> <i class="icon-user icon-large"></i>Login <b class="caret"></b> </a>
+      <ul class="dropdown-menu">
+        <li><a class="admin_login"href="admin/index.php">Admin</a></li>
+		<li><a class="scheduler_login"href="admin/index3.php">tourist</a></li>
+        <li><a class="user_login"href="admin/index2.php">OPerator</a></li>
+      </ul>
+	  
+  </ul>
+  </ul> -->
+
+ 
+					<!--<li><a title="News" href="administrator/index.php" target="_blank">News</a></li> -->
+				</ul>
+				<div class="cl"></div>
+			</div>
+			<!-- END Navigation -->
+			<!-- Main -->
+			<div id="main">
+				<!-- Slider -->
+				<div id="slider-frame">					
+					<div id="slider">
+						<ul>
+							<li>
+								<img src="css/imag/s.jpg" />
+								<div class="caption">
+									
+									<p>Palse of Atha Fasil</p>
+									
+								</div>	
+							</li>
+							<li>
+								<img src="css/imag/k2.jpg" />
+								<div class="caption">
+									
+									<p>Rad Fox </p>
+									
+								</div>
+							</li>
+							<li>
+								<img src="css/imag/k3.jpg"  />
+								<div class="caption">
+									
+									<p>Awra Amba Community Members at Work</p>
+									
+								</div>
+							</li>
+							<li>
+								<img src="css/imag/k4.jpg"  />
+								<div class="caption">
+									
+									<p>Ancient culcural tools of Amhara peoples </p>
+									
+								</div>
+							</li>
+							<li>
+								<img src="css/imag/k5.jpg"  />
+								<div class="caption">
+									
+									<p>Wally Ibex live in south mountains</p>
+									
+								</div>
+							</li>
+							<li>
+								<img src="css/imag/k7.jpg" />
+								<div class="caption">
+									
+									<p></p>
+									
+								</div>
+							</li>
+						</ul>
+						<div class="jcarousel-control">
+				    		<a title="slide 1" href="#">1</a>
+				     		<a title="slide 2" href="#">2</a>
+				      		<a title="slide 3" href="#">3</a>
+				     		<a title="slide 4" href="#">4</a>
+							<a title="slide 5" href="#">5</a>
+				     		<a title="slide 6" href="#">6</a>			     		 
+   						</div>
+   						<div class="slider-arrows">
+	   						<a title="Next Slide" id="next" href="#">next</a>
+	   						<a title="Previous Slide" id="prev" href="#">prev</a>
+   						</div>   						
+					</div>
+				</div>
+				<!-- END Slider -->
+				<!-- Sidebar -->
+				<div id="sidebar">
+					<div class="box">
+					<form  name="login" action="" method="post">
+			  <p align="center" id="error">&nbsp;</p>
+                    </form> 
+						<ul>
+							<li>
+							  <div class="title">
+                                <h2> Tourist View Information</h2>
+							    <img class="bullet" src="css/images/bullet.png" alt="small grey bullet" /> </div>
+						    <li> <a title="mission" href="mission.html">Mission and Vission</a></li>
+			                 <li> <a title="values" href="values.html">Transportation</a></li>
+							<li><a title="photo of reservation culture" href="Galleryc.php">Gallery Amhara culture</a></li>
+							<li><a title="photo of reservation tourist site" href="Gallerytt.php">Gallery Amhara tourist site</a></li>
+							<li><a title="photo of reservation hotel" href="Galleryh.php">Reservation hotel gallery</a></li>
+							<li><a title="feedback of arhot abe"  href="Feedback.php">Feedback</a></li>
+							<li><a title="tourist login" href="index3.php">tourist login</a></li>
+        <li><a title="operator login "href="index2.php">OPerator login</a></li>
+	<li><a title="sign up"  href="signup.html"target="_blank">Sign up for Opertaor</a></li>
+                        </ul>
+					</div>
+					
+				
+					<div class="box">
+                    
+					  <ul class="socials"><li><a title="Facebook" href="http://www.facebook.com" target="_blank><img src="css/images/fb.png" alt="facebook icon" />facebook</a></li>
+							  <li><a title="Tweeter" href="http://www.twitter.com/andualem5" target="_blank><img src="css/images/tweet.png" alt="tweeter icon" />twitter</a></li>	
+					  </ul>
+				  </div></div>
+				
+				
+				<!-- END Sidebar -->
+				<!-- Content -->
+				<div id="content">
+		<div>
+            <br>
+			<br><br>
+			<h1>Contact Us</h1>
+            <br><br>
+            
+            <h2>Tour and travel guiding system</h2>
+            
+	
+			<br><br>
+             Main Branch, Dessie Sied Yasin Mule <br/><br>
+            P.O.Box, 11000<br /><br>
+            Ethiopia<br /><br />
+			
+			<strong>Phone:</strong><br>
+			+251-033-116814<br/>
+			+251-033-111000<br><br>
+			<strong>Mobile:</strong><br>
+			+251-918-350006<br><br>
+			<strong>Fax:</strong><br>
+			+251-033-110812<br><br>
+                        <strong>For additional information contact :</strong><br>
+			ANRS Culture and Tourism Bureau/ Tel 058 220 11 32/ <br><br>
+                        Gondar tourist information center / Tel 058  111 00 22<br><br>
+                        Lalibela tourist information center/ 0333-36 01 67 / <br><br>
+                        Blue Nile tourist information center /0582370054/ <br><br>
+                        
+            <strong>E-mail:</strong><a href="http://www.amharaculture.com"><span class="box">Culture &amp;@Bureau
+ Office.org</span></a></div>   	
+				</div>
+				<!-- END Content -->
+				<div class="cl"></div>
+			</div>
+			<!-- END Main -->
+		</div>
+		<!-- END Wrapper Middle -->
+		<div id="wrapper-bottom"></div>	
+		<!-- Footer  -->
+		<div id="footer">
+		<span class="author"><a href=""><font color="red">Developers:tour and travel guiding team &copy;&nbsp;2017 Copy Right Reserved 2009  E.C </font></a></span>		</div>
+		<!-- END Footer -->
+	</div>
+</body>
+</html>
